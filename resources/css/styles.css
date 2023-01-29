@@ -12,6 +12,7 @@ body {
 
 h1 {
    font-size: 50px;
+   border-bottom: 2px solid rgb(245, 132, 91);
 }
 
 .main-body {
