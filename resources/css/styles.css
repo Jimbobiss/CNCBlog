@@ -1,7 +1,11 @@
+html {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 h1 {
-   color: red;
+   color: hsl(120, 80%, 75%);
 }
 
 .blog-pic {
-   width: 400px;
+   width: 500px;
 }
