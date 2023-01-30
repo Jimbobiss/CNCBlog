@@ -10,9 +10,59 @@ body {
    text-align: center;
 }
 
+nav {
+   position: fixed;
+   top: 250px;
+   float: left;
+   width: 200px;
+   margin-left: 20px;
+}
+
+nav h3 {
+   border-bottom: 2px dotted rgb(245, 132, 91);   
+   font-size: 20px;
+   margin: 0;
+   padding: 20px 5px;
+}
+
 h1 {
    font-size: 50px;
    border-bottom: 2px solid rgb(245, 132, 91);
+   padding-bottom: 20px;
+   margin: 60px 0px;
+}
+
+figure {
+   margin: 0;
+}
+
+.navigation ul {
+   list-style-type: none;
+   display: block;
+   text-align: center;
+   border: 2px dotted rgb(245, 132, 91);
+   border-radius: 5px;
+   padding: 0px 0px;
+
+}
+
+.navigation ul li {
+   padding: 3px 0px;
+   
+}
+
+.navigation ul li a {
+   text-decoration: none;
+   color: rgb(245, 132, 91);
+   font-size: 20px;
+}
+
+.navigation ul li a:hover {
+   color: rgb(243, 159, 129);
+}
+
+.nav-boxes {
+   margin: 10px 0px;
 }
 
 .main-body {
@@ -21,5 +71,5 @@ h1 {
 }
 
 .blog-pic {
-   width: 500px;
+   width: 75%;
 }
