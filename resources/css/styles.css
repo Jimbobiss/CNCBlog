@@ -36,6 +36,11 @@ figure {
    margin: 0;
 }
 
+footer {
+   border-top: 2px solid rgb(245, 132, 91);
+   margin-top: 30px;
+}
+
 .navigation ul {
    list-style-type: none;
    display: block;
@@ -72,4 +77,9 @@ figure {
 
 .blog-pic {
    width: 75%;
+}
+
+.blog-post {
+   border-top: 2px solid rgb(245, 132, 91);
+   border-bottom: 2px solid rgb(245, 132, 91);
 }
