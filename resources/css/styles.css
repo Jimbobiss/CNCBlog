@@ -46,8 +46,7 @@ figcaption {
 
 footer {
    border-top: 2px solid;
-   margin-top: 30px;
-   margin-bottom: 50px;
+   margin: 50px 0;
 }
 
 /* Used to add the accent colour to elements */
@@ -59,7 +58,7 @@ footer {
    list-style-type: none;
    display: block;
    text-align: center;
-   border: 2px dotted;
+   border: 2px solid;
    border-radius: 5px;
    padding: 0px 0px;
 }
@@ -89,6 +88,8 @@ footer {
 
 .blog-pic {
    width: 75%;
+   border: 3px solid #45556b;
+   border-radius: 5px;
 }
 
 .blog-post {
@@ -107,5 +108,5 @@ footer {
 }
 
 #welcome-intro {
-   margin-bottom: 50px;
+   margin: 50px;
 }
