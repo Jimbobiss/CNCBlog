@@ -64,17 +64,19 @@ footer {
 }
 
 .navigation ul li {
-   padding: 3px 0px;
+   padding: 6px 0px;
 }
 
 .navigation ul li a {
    text-decoration: none;
    color: #f5845b;
    font-size: 20px;
+   transition: all .2s ease;
 }
 
 .navigation ul li a:hover {
    color: #f39f81;
+   font-size: 25px;
 }
 
 .nav-boxes {
