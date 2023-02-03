@@ -20,7 +20,7 @@
         <ul class="accent">
           <li><h3 class="accent">Blog Navigation</h3></li>
           <div class="nav-boxes">
-            <li><a href="#page-top">Return to Top</a></li>
+            <li><a href="#page-top" id="rtt">Return to Top</a></li>
             <li><a href="#post1">The Beginning</a></li>
             <li><a href="#post2">Picking Back Up</a></li>
           </div>
@@ -91,9 +91,65 @@
             class="blog-pic"
           />
         </figure>
-        <figcaption></figcaption>
         <article>
-          <p class="blog-text"></p>
+          <p class="blog-text">
+            Last week I finished an advanced course with our CAM software
+            provider and with this training fresh in my mind, I feel a renewed
+            sense of enthusiasm. The software in question is called Alphacam,
+            and it’s our sole port of call for the <i>toolpath</i> generation
+            that we need to create the machine programs. The numeric code (NC)
+            generated from this application is then fed into the proprietary
+            software that was shipped with the product – Pitagora. I can use
+            that to do the final checks on my program and turn it into machine
+            code that that can be run. <br />
+            <br />
+            All very well in principle, but - unfortunately - not so straight
+            forward in practice. But okay, let’s try to build on the things I
+            learnt last week – at least it's somewhere to start. <br />
+            <br />
+            The training was specifically focused on utilising the advanced
+            5-axis tools that are available within Alphacam: these don’t ship as
+            standard with the package and we’ve had to shell out quite a bit
+            extra to acquire them, but it will 100% be worth it for what we’re
+            trying to achieve. However, I just want to start off small - prove
+            some concepts first… I’m going to need something to cut. <br />
+            <br />
+            So, my first port of call is our CAD software, SolidWorks, where I
+            can quickly design something made specifically for the purpose of
+            testing. I whip up a funny little model that has specific features I
+            can target with different machining methods within Alphacam – I
+            creatively call it: “AlphaTestPiece”.
+          </p>
+
+          <figure>
+            <img
+              src="./resources/images/23-01-24 SW Model Final.jpeg"
+              alt="A CAD model testing piece."
+              class="blog-inline-pic"
+            />
+          </figure>
+          <figcaption>AlphaTestPiece in all its glory.</figcaption>
+
+          <p class="blog-text">
+            It’s not much to look at, but I reckon that this will be a great
+            project to get me off the ground – it has a bit of everything. So, I
+            have my subject and now it’s time to start trying to bring it to
+            life. I switch over to Alphacam and begin attempting to create some
+            tool paths. It’s worth noting that I designed AlphaTestPiece with
+            our 3-axis CNC in mind – a machine we understand very well. I can
+            layer up bits of CNC-machined plywood and get a “blank” of a known
+            starting shape, which is essential and easy to do with our existing
+            knowledge.
+          </p>
+
+          <figure>
+            <img
+              src="./resources/images/23-01-24 SW Model.jpeg"
+              alt="The model with plywood parts visible"
+              class="blog-inline-pic"
+            />
+          </figure>
+          <figcaption>The plywood blank overlayed ontop of the model.</figcaption>
         </article>
       </section>
     </div>

@@ -41,13 +41,15 @@ figure {
 }
 
 figcaption {
-   color: #45556b;
+   color: #7388a5;
+   font-style: italic;
 }
 
 footer {
    border-top: 2px solid;
    margin: 50px 0;
 }
+
 
 /* Used to add the accent colour to elements */
 .accent {
@@ -106,8 +108,9 @@ footer {
 }
 
 .blog-date {
-   color: #45556b;
-   margin: 25px 0px;
+   color: #7388a5;
+   margin: 30px 0px;
+   /* text-decoration: underline; */
 }
 
 .blog-text {
@@ -115,9 +118,24 @@ footer {
    margin-bottom: 30px ;
 }
 
+.blog-inline-pic {
+   width: 50%;
+   border: 3px solid #45556b;
+   border-radius: 5px;
+}
+
 .footnote {
    font-size: 15px;
    padding: 15px 0;
+}
+
+
+#rtt {
+   color: #7388a5;
+}
+
+#rtt:hover {
+   color: #5d646d;
 }
 
 #welcome-intro {
