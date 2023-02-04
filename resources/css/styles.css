@@ -1,3 +1,16 @@
+@media screen and (max-width: 1500px) {
+   nav {
+      visibility: hidden;
+   }
+
+   .navigation ul li a {
+      visibility: hidden;
+      transition: all 0s;
+   }
+
+   
+}
+
 * {
    color: #f5845b;
 }
@@ -73,7 +86,7 @@ footer {
    text-decoration: none;
    color: #f5845b;
    font-size: 17px;
-   transition: all .2s ease;
+   transition: font-size .2s ease;
 }
 
 .navigation ul li a:hover {
@@ -117,6 +130,7 @@ footer {
 .blog-text {
    text-align: justify;
    margin-bottom: 30px ;
+   padding: 0 25px;
 }
 
 .blog-inline-pic {
