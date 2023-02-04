@@ -13,6 +13,9 @@
 
 <html id="page-top">
   <body>
+    <!-- Creates a line across the top of the page for styling -->
+    <div id="top-accent" class="accent"></div>
+
     <!-- Navigation section -->
     <div class="navigation">
       <!-- Side scroll fixed navbar -->
@@ -127,19 +130,19 @@
               alt="A CAD model testing piece."
               class="blog-inline-pic"
             />
+            <figcaption>AlphaTestPiece in all its glory.</figcaption>
           </figure>
-          <figcaption>AlphaTestPiece in all its glory.</figcaption>
 
           <p class="blog-text">
             It’s not much to look at, but I reckon that this will be a great
             project to get me off the ground – it has a bit of everything. So, I
             have my subject and now it’s time to start trying to bring it to
             life. I switch over to Alphacam and begin attempting to create some
-            tool paths. It’s worth noting that I designed AlphaTestPiece with
+            tool paths (It’s worth noting that I designed AlphaTestPiece with
             our 3-axis CNC in mind – a machine we understand very well. I can
             layer up bits of CNC-machined plywood and get a “blank” of a known
             starting shape, which is essential and easy to do with our existing
-            knowledge.
+            knowledge).
           </p>
 
           <figure>
@@ -148,13 +151,123 @@
               alt="The model with plywood parts visible"
               class="blog-inline-pic"
             />
+            <figcaption>
+              The plywood blank overlayed ontop of the model.
+            </figcaption>
           </figure>
-          <figcaption>The plywood blank overlayed ontop of the model.</figcaption>
+
+          <p class="blog-text">
+            Alphacam turns out not to be as compliant as I was hoping it to be,
+            and after 2 or 3 hours of frustration, I have only managed to create
+            two finishing toolpaths and one bodged-together roughing toolpath. I
+            decide that it’s not worth banging my head against the wall anymore
+            today and settle for what I’ve put together so far. Now it’s time to
+            export the Alphacam NC code and import it into Pitagora – the
+            proprietary software from the machine makers, Bacci.
+          </p>
+
+          <figure>
+            <img
+              src="./resources/images/23-01-24 AC ToolPaths.jpeg"
+              alt="Alphacam toolpaths on my testing piece"
+              class="blog-inline-pic"
+            />
+            <figcaption>
+              The finished toolpaths for my three operations.
+            </figcaption>
+          </figure>
+
+          <p class="blog-text">
+            It's at this point, within Pitagora, that I now realise there’s
+            something strange going on with the way Alphacam is generating
+            rapids (rapid movements of the machine outside of cutting
+            movements). In fact, it seems to be ploughing the tool and head of
+            the machine through the workpiece at the beginning of quite a few of
+            the operations. This is definitely not what I want. Unfortunately,
+            this means I’m going to have to manually edit the G-code to change
+            these errant manoeuvres, until I can get someone from Alphacam to
+            look into the issue. I isolate the problematic moves by running
+            simulations, line-by-line, and then I edit the coordinates to
+            prevent the collisions from occurring. This takes quite a while and
+            is very fiddly but, by the end of it, I now have a program that
+            doesn’t collide with anything and <i>should</i> actually cut some
+            wood! <br /><br />
+            Next, I run a full program collision check in Pitagora, just to
+            confirm that nothing is wrong; the software is extremely good for
+            this purpose. I now remember that to actually generate the machine
+            code, I have to compile the program on the PC attached to the
+            machine itself – not sure why, but that’s how it is - so off I go.
+            Now I make a mistake that teaches me a valuable lesson: don't run a
+            collision check again on the machine PC. The reason this was such a
+            bad idea is that, strangely, our machine PC is only running an Intel
+            i3 processor, so the collision checking execution is painfully slow.
+            In the future I will run all collision checks on <i>my</i> PC to
+            take advantage of the far superior hardware. <br /><br />
+            Finally, I have the machine-runnable code: this is the critical
+            moment. I remember our machine training from all those months ago
+            and how to load a program - it’s actually surprisingly easy,
+            although sometimes can be a bit quirky. Nonetheless, it’s nothing I
+            can’t get around and it works as expected on this occasion. Now I
+            click the big green <span class="start-btn">START</span> button,
+            which primes the program. I’m going to run this very slowly in clean
+            air to start with. Even though I’ve been assured many times that
+            there won’t be any collisions, seeing is believing when you're
+            playing with your company’s biggest single machine investment.
+            <br /><br />
+            The spindle whizzes up to 24,000 RPM, creating a gentle whirring
+            sound, and I slowly turn the speed controller dial clockwise. The
+            machine begins to move. The next few minutes are spent with my
+            finger hovering over the <span class="stop-btn">STOP</span> button,
+            as I watch happen exactly what Pitagora said would happen.
+            Eventually the table that would carry our testing piece returns from
+            the inner enclosure and the spindle decelerates to a stop:
+            everything is in one piece. I have successfully run a program
+            utilizing more than 3 axes! This makes me feel pretty good, but I
+            still don’t have my shaped piece of wood. <br /><br />
+            Earlier in the day, we had nested, cut and assembled some of the
+            blanks required to machine our AlphaTestPiece and now their time has
+            come. I set up the machine’s vacuum system and turn on the pump,
+            then I take one of our plywood blanks and correctly position it onto
+            the machine table. There’s a foot pedal below the table which I step
+            on to activate the vacuum, suctioning the blank down and holding it
+            in place. It’s ready to go! I turn the speed dial up and carefully
+            begin the program. Everything plays out exactly as intended and by
+            the end of it, I have a product!
+          </p>
+
+          <figure>
+            <img
+              src="./resources/images/23-01-24 Finished Piece.jpeg"
+              alt="A finished, cut wooden AlphaTestPiece"
+              class="blog-inline-pic"
+            />
+            <figcaption>
+              The finished piece! Not all of the features are there yet, but
+              it's a big step!
+            </figcaption>
+          </figure>
+
+          <p class="blog-text">
+            As you can see, it doesn’t have all of the features that I had
+            modelled originally, but the main shape of the body is there and it
+            has helped prove countless theories! This is the physical
+            representation of a big step forward in understanding this machine
+            and how to use CNC beyond 3 axes. I am frankly really pleased and go
+            to show off my new, vaguely barn-like, piece of wood to anyone left
+            in the factory at this time of night. At the start of the day our
+            portfolio of practical experience was bare, but now I have added the
+            first and one of the most important entries.<br /><br />
+            It’s late and time for me to leave, but my optimism has reached a
+            new height and I’m looking forward to conquering the next step in
+            the project: adding the remaining features to the finished piece.
+            <br /><br />
+            For now, I’m going to bed.
+          </p>
         </article>
       </section>
     </div>
 
-    <footer>
+    <footer class="accent">
       <h3 class="footnote">James Hearn - 2023</h3>
     </footer>
   </body>
