@@ -139,6 +139,11 @@ footer {
    border-radius: 5px;
 }
 
+/* Serves to add space between blog pictures and text */
+.blog-pic-spacing {
+   margin: 12px 0;
+}
+
 .start-btn {
    color: green;
 }
